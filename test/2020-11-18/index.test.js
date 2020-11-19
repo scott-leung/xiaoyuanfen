@@ -111,7 +111,6 @@ describe('2020-11-18 Write myApply, myCall, myBind', function () {
       assert(fn3(12, 45) === fn4(12, 45));
       assert(fn3(12, 65, 98) === fn4(12, 65, 98));
     });
-
   });
 
 });
