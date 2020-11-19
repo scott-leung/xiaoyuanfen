@@ -8,11 +8,11 @@ inquirer.registerPrompt('file-tree-selection', require('inquirer-file-tree-selec
 
 inquirer
   .prompt([{
-    name: 'files',
-    root: __dirname,
+    name: 'file',
+    root: __dirname + '/test',
     onlyShowValid: true,
     type: 'file-tree-selection',
-    message: 'Files:',
+    message: 'File:',
     validate(path) {
       const isFile = path.split('.').length > 1;
       return isFile ? util.matchBySuffix(path, '.test.js') : true;

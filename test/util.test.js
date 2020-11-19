@@ -29,9 +29,9 @@ describe('util.js', function () {
     assert(files.length > 2);
   });
     
-  it('should return more than 3 files when use findFileBySuffix with the suffix - .test.js|.js', function () {
+  it('should return at least 3 files when use findFileBySuffix with the suffix - .test.js|.js', function () {
     const files = util.findFileBySuffix(__dirname, ['.test.js', '.js']);
-    assert(files.length > 3);
+    assert(files.length >= 3);
   });
 
   it('should return empty array when use findFileBySuffix with the suffix - .none', function () {
@@ -39,9 +39,9 @@ describe('util.js', function () {
     assert(files.length <= 0);
   });
     
-  it('should return at least 1 file when use findFileExcludeSuffix with the suffix - .test.js', function () {
+  it('should return empty array when use findFileExcludeSuffix with the suffix - .test.js', function () {
     const files = util.findFileExcludeSuffix(__dirname, '.test.js');
-    assert(files.length >= 1);
+    assert(files.length <= 0);
   });
     
   it('should return empty array when use findFileExcludeSuffix with the suffix - .test.js|.js', function () {
