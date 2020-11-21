@@ -20,12 +20,15 @@ $ yarn
 ```shell
 $ npm run guide
 ```
-
+or
+```shell
+$ yarn guide
+```
 <br>
 
 # 文章目录
 
-### [2020-11-20] [【真】手写call、apply、bind]()
+### [2020-11-20] [【真】手写call、apply、bind](https://mp.weixin.qq.com/s/lYwof4AuP2JBFJjjD16J5Q)
 
 <br>
 
