@@ -77,7 +77,7 @@ describe('2020-11-21 Write myApply, myCall, myBind', function () {
       assert(add.myApply(obj, [123, 1, 4]) === add.apply(obj, [123, 1, 4]));
       assert(add.myApply(null, [666, 4]) === add.apply(null, [666, 4]));
       assert(add.myApply(null, [123, 1, 4]) === add.apply(null, [123, 1, 4]));
-      assert.notDeepStrictEqual(add.myApply(obj, null) === add.apply(obj, null));
+      assert(add.myApply(obj, null) === add.apply(obj, null));
       assert.throws(() => { add.myApply(obj, 123) });
       assert.throws(() => { add.apply(obj, 123) });
       assert.throws(() => { add.myApply(obj, 'sdf') });
