@@ -1,4 +1,4 @@
-![小猿奋](./images/logo_search_qrcode.png)
+![小猿奋](images/logo_search_qrcode.png)
 
 # 运行
 
