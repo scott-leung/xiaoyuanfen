@@ -89,12 +89,17 @@ function findFileExcludeSuffix(dirPath, suffix) {
   return retFiles;
 }
 
+function isObj(obj) {
+  return typeof obj === 'object';
+}
+
 module.exports = {
   isNode,
   getGlobalHandle,
   findFileBySuffix,
   findFileExcludeSuffix,
   matchBySuffix,
+  isObj,
 }
 
 // js how to judge strict environment
